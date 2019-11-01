@@ -24,8 +24,8 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ; Main loop here
 ;-------------------------------------------------------------------------------
 		.data			; define the numbers and store in the memory
-x:		.word 0x1111	; 0x2400-0x2404
-y:		.word 0x2222
+x:		.word 0x1111		; 0x2400-0x2404
+y:		.word 0x2222		; assume the values
 z: 		.word 0x3333
 
 		.text
