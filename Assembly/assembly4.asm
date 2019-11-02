@@ -24,7 +24,7 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ; Main loop here
 ;-------------------------------------------------------------------------------
 		.data				; define the n
-n:		.word 6			; input the n you want
+n:		.word 6				; input the n you want
 		.text
 		mov.w n, R4			; set R4 as a copy of n
  		mov.w R4, R5		; initialize R5
